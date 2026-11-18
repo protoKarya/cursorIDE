@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Kepler
+Exec=AppRun --no-sandbox %U
+Terminal=false
+Type=Application
+Icon=kepler
+StartupWMClass=kepler
+X-AppImage-Version=0.22.0
+Comment=A delivery engine for agent-driven development
+MimeType=x-scheme-handler/kepler;x-scheme-handler/kepler;
+Categories=Utility;

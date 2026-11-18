@@ -1,0 +1,21 @@
+# Kepler Binary Manifest
+# Downloaded: 2026-11-18
+# Version: 0.22.0
+# Description: "A delivery engine for agent-driven development"
+
+[binaries]
+kepler-x64.AppImage = { size_mb = 172, platform = "linux-x64", path = "Desktop/IDE/kepler-x64.AppImage" }
+kepler-arm64.rpm = { size_mb = 137, platform = "linux-arm64", path = "Desktop/IDE/kepler-arm64" }
+kepler-arm64.dmg = { size_mb = 172, platform = "macos-arm64", path = "Desktop/IDE/kepler-arm64.dmg" }
+kepler-arm64-setup.exe = { size_mb = 150, platform = "windows-arm64", path = "Desktop/IDE/kepler-arm64-setup.exe" }
+
+[also_eaten]
+JetBrains.ReSharper.2026.3.web = { size_mb = 70, type = "dotnet-tooling" }
+ChatGPT-Installer = { size_kb = 795, type = "openai-desktop" }
+SteamSetup = { size_mb = 2, type = "steam-client" }
+
+[wiring]
+squirrel_mcp = "192.168.4.244:9800"
+ollama = "192.168.4.244:11436"
+forgejo = "192.168.4.244:3000"
+dromedary = "*.primals.eco → :8080"

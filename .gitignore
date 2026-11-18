@@ -1,0 +1,15 @@
+# Kepler binaries (too large for git — use plasmidBin pattern)
+kepler/x64/*.AppImage
+kepler/arm64/*.rpm
+kepler/arm64/*.dmg
+kepler/arm64/*.exe
+*.exe
+*.dmg
+*.rpm
+*.AppImage
+
+# Build artifacts
+node_modules/
+dist/
+out/
+.vscode-test/
